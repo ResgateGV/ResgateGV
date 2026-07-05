@@ -1,0 +1,16 @@
+@media (max-width: 728px){
+    header{
+        justify-content: center;
+    }
+    .menu-primario{
+        display: none;
+    }
+    .logo-text button h1{
+        font-size: 1.5rem;
+    }
+    main p{
+        font-size: 1.6rem;
+        width: 90%;
+        letter-spacing: 1px;
+    }
+}

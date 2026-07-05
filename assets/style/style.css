@@ -4,7 +4,8 @@
 @import url("header.css");
 @import url("main.css");
 @import url("footer.css");
-/* Fim Imports *
+@import url("responsivo.css");
+/* Fim Imports */
 
 /* Reset Css */
 *{ padding:0;margin:0;box-sizing:border-box }
