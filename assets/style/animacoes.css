@@ -1,0 +1,29 @@
+@keyframes waveColor {
+  0% {
+    color: var(--cor-base);
+  }
+  25%{
+    color: var(--cor-base);
+  }
+  50% {
+    color: var(--cor-animada);
+  }
+  75% {
+    color: var(--cor-base);
+  }
+  100% {
+    color: var(--cor-base);
+  }
+}
+
+@keyframes waveColor2 {
+  0% {
+    color: rgb(32, 190, 27);
+  }
+  50% {
+    color: rgb(209, 212, 7);
+  }
+  100% {
+    color: rgba(92, 173, 25, 0.685);
+  }
+}
