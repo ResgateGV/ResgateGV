@@ -1,9 +1,11 @@
 @media (max-width: 728px){
+    body{
+        grid-template-rows: 120px 1fr 80px;
+    }
     header{
         justify-content: center;
-    }
-    .menu-primario{
-        display: none;
+        flex-direction: column;
+        gap: 10px;
     }
     .logo-text button h1{
         font-size: 1.5rem;

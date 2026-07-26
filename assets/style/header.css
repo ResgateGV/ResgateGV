@@ -27,6 +27,10 @@ header{
     gap: 20px;
 }
 
+.logo-text h1{
+    animation: waveColor 2s infinite;
+}
+
 .logo-text h1, .menu-primario ul li a{
     color: var(--cor-base);
     font-weight: bold;
