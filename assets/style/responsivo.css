@@ -1,18 +1,3 @@
 @media (max-width: 728px){
-    body{
-        grid-template-rows: 120px 1fr 80px;
-    }
-    header{
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .logo-text button h1{
-        font-size: 1.5rem;
-    }
-    main p{
-        font-size: 1.6rem;
-        width: 90%;
-        letter-spacing: 1px;
-    }
+
 }
