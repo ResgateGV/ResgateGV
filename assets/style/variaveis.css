@@ -1,3 +1,10 @@
 :root {
-
+  /* Fundos */
+  --cor-fundo-cinzaescuro: #242424;
+  --cor-fundo-vermelho: #E10600;
+  --cor-fundo-amarelo: #FFC400;
+  --cor-fundo-pretoprofundo: #050505;
+  /* Textos */
+  --cor-texto-amarelo: #FFB800;
+  --cor-texto-cinza: #A0A0A0;
 }

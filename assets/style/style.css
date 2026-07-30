@@ -14,9 +14,12 @@ button{ background: none; border: none; cursor: pointer; }
 img{ display: block; max-width: 100%; height: auto; }
 ul{ list-style: none; }
 .uppercase{ text-transform: uppercase; }
+.text-amarelo{ color: var(--cor-texto-amarelo); }
 /* Fim Reset Css */
 
 
 body {
-
+    width: 100vw;
+    height: auto;
+    background-color: var(--cor-fundo-cinzaescuro);
 }
