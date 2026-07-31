@@ -3,6 +3,7 @@ header{
     grid-area: header;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 
 header .logo{
@@ -22,10 +23,17 @@ header .logo .logo-text{
     font-weight: bold;
 }
 
+header .menu-primario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 header .menu-primario ul{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 20px;
     padding-right: 20px;
 }
@@ -34,4 +42,21 @@ header .menu-primario ul li a{
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
+}
+
+header .menu-primario ul li:hover{
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(
+        90deg,
+        #FFC400,
+        #FF8C00,
+        #E10600
+    ) 1;
+}
+
+header .menu-primario ul li:nth-child(6){
+    background-color: var(--cor-fundo-amarelo);
+    color: black !important;
+    padding: 8px 16px;
+    border-radius: 2px;
 }

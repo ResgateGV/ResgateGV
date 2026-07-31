@@ -4,6 +4,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
 }
 
 /* Footer Primaria */
@@ -25,6 +26,17 @@ footer{
 .footer-primario .logo-footer img{
     width: 80px;
     height: 80px;
+}
+
+.menu-secundario{
+    display: flex;
+    gap: 20px;
+}
+
+.menu-secundario .menu-secundario-lista1,.menu-secundario .menu-secundario-lista2{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 /* Footer Secundaria */
