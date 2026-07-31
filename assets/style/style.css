@@ -13,12 +13,12 @@ span, a, p, h1, h2, h3, h4, h5, h6 { font-family: inherit; font-weight: inherit;
 button{ background: none; border: none; cursor: pointer; }
 img{ display: block; max-width: 100%; height: auto; }
 ul{ list-style: none; }
+/* Fim Reset Css */
+/* Sets */
 .uppercase{ text-transform: uppercase; }
 .text-amarelo{ color: var(--cor-texto-amarelo); }
 .text-vermelho{ color: var(--cor-texto-vermelho); }
 h1, h2, h3, h4, h5, h6, p, li, a, button{ color: white; }
-/* Fim Reset Css */
-
 
 body {
     max-width: 100vw;

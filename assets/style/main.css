@@ -64,9 +64,9 @@ main{
 }
 
 /* Galeria */
-
 .galeria {
     padding: 100px 2%;
+    text-decoration: none;
 }
 
 .galeria h4 {
