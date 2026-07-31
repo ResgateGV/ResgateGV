@@ -1,3 +1,37 @@
 header{
     background-color: var(--cor-fundo-pretoprofundo);
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+header .logo img{
+    width: 80px;
+    height: 80px;
+}
+
+header .logo .logo-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .menu-primario ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+header .menu-primario ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
 }

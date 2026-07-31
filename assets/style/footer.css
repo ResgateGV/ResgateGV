@@ -1,3 +1,50 @@
 footer{
     background-color: var(--cor-fundo-pretoprofundo);
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Footer Primaria */
+
+.footer-primario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.footer-primario .logo-footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-primario .logo-footer img{
+    width: 80px;
+    height: 80px;
+}
+
+/* Footer Secundaria */
+
+.footer-secundario{
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(
+        90deg,
+        #FFC400,
+        #FF8C00,
+        #E10600
+    ) 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer-secundario p{
+    font-size: 14px;
+    margin: 5px 0;
 }
