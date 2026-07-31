@@ -1,62 +1,79 @@
-footer{
-    background-color: var(--cor-fundo-pretoprofundo);
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  background: #020202;
+  border-top: 1px solid rgba(255,255,255,.04);
 }
 
-/* Footer Primaria */
-
-.footer-primario{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-
+.footer-primary {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1.45fr .8fr;
+  gap: 40px;
+  padding: 38px 0 28px;
 }
 
-.footer-primario .logo-footer{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.footer-primary h3 {
+  margin: 0 0 12px;
+  color: var(--vermelho);
+  font-size: .88rem;
+  text-transform: uppercase;
 }
 
-.footer-primario .logo-footer img{
-    width: 80px;
-    height: 80px;
+.footer-nav > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px 20px;
 }
 
-.menu-secundario{
-    display: flex;
-    gap: 20px;
+.footer-nav a,
+.footer-contact p {
+  font-size: .84rem;
 }
 
-.menu-secundario .menu-secundario-lista1,.menu-secundario .menu-secundario-lista2{
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+.footer-contact p {
+  display: flex;
+  gap: 9px;
+  margin: 0 0 8px;
 }
 
-/* Footer Secundaria */
+.footer-contact p span { color: var(--amarelo); }
 
-.footer-secundario{
-    border-top: 3px solid transparent;
-    border-image: linear-gradient(
-        90deg,
-        #FFC400,
-        #FF8C00,
-        #E10600
-    ) 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
+.footer-social > div {
+  display: flex;
+  gap: 15px;
 }
 
-.footer-secundario p{
-    font-size: 14px;
-    margin: 5px 0;
+.footer-social a {
+  display: grid;
+  width: 43px;
+  height: 43px;
+  place-items: center;
+  border: 2px solid var(--amarelo);
+  border-radius: 50%;
+  color: var(--amarelo);
+  font-size: 1.35rem;
+}
+
+.footer-secondary {
+  position: relative;
+  padding: 14px 20px 18px;
+  text-align: center;
+  border-top: 1px solid rgba(255,196,0,.45);
+  background:
+    linear-gradient(90deg, transparent, rgba(255,196,0,.1), transparent);
+}
+
+.footer-secondary p {
+  margin: 0 0 2px;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.footer-secondary p span { color: var(--amarelo); }
+
+.footer-secondary small {
+  color: #aaa;
+  font-size: .72rem;
 }

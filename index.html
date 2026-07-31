@@ -3,180 +3,205 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resgate GV — uma juventude vivendo o propósito de Cristo.">
   <title>ResgateGV - Grupo de Jovens</title>
+
+  <link rel="shortcut icon" href="assets/imgs/LogoResgate.png" type="image/x-icon">
+
+  <!-- Arquitetura CSS:
+       style.css      -> arquivo principal
+       configuracoes  -> reset, tipografia e elementos-base
+       variaveis      -> cores, medidas e imagens
+       presets        -> utilitários e componentes reutilizáveis
+       header/main/footer -> cada área da página
+       animacoes      -> transições e efeitos
+       responsivo     -> breakpoints/mobile
+  -->
   <link rel="stylesheet" href="assets/style/style.css">
   <link rel="stylesheet" href="assets/style/responsivo.css">
-  <link rel="shortcut icon" href="assets/imgs/LogoResgate.png" type="image/x-icon">
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="assets/imgs/LogoResgate.png" alt="Logo ResgateGV" id="logo">
-      <p class="logo-text uppercase">Resgate <span class="text-vermelho">GV</span></p>
-    </div>
-    <nav class="menu-primario">
+<header class="site-header" id="inicio">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio" aria-label="Resgate GV - início">
+      <img src="assets/imgs/LogoResgate.png" alt="Logo Resgate GV">
+      <span class="brand-name">Resgate <strong>GV</strong></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="menu-primario" aria-label="Navegação principal">
       <ul>
-        <li><a href="index.html" target="_blank" class="uppercase">Início</a></li>
-        <li><a href="https://resgategv.github.io/ResgateGV/pages/sobre.html" target="_blank" class="uppercase">Sobre</a></li>
-        <li><a href="https://resgategv.github.io/ResgateGV/pages/encontro.html" target="_blank" class="uppercase">Encontros</a></li>
-        <li><a href="#" target="_blank" class="uppercase">Galeria</a></li>
-        <li><a href="#" target="_blank" class="uppercase">Contato</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfDe2x2pQNWtkqIPdbqj8do6vz-_GHcP4r5t6SCD7UJRcsVtg/viewform" target="_blank" class="uppercase">Inscrição</a></li>
+        <li><a class="active" href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#encontros">Encontros</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a class="nav-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSfDe2x2pQNWtkqIPdbqj8do6vz-_GHcP4r5t6SCD7UJRcsVtg/viewform" target="_blank" rel="noopener noreferrer">Inscrição</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-   <section class="participacao">
-       <h1 class="uppercase">Resgate <span class="text-vermelho">GV</span></h1>
-       <p class="uppercase">Uma juventude vivendo o propósitos de Cristo.</p>
-       <ul class="participacao-lista">
-         <li>
-          <img src="assets/imgs/" alt="">
-          <p class="uppercase">Encontros Todos os Sábados</p>
-         </li>
-         <li>
-          <img src="assets/imgs/" alt="">
-          <p class="uppercase">18:30</p>
-         </li>
-         <li>
-          <img src="assets/imgs/" alt="">
-          <p class="uppercase">Comunidade Santa Luzia</p>
-         </li>
+<main>
+
+  <section class="hero section-dark" aria-labelledby="hero-title">
+    <div class="hero-overlay"></div>
+    <div class="hero-splash hero-splash-left"></div>
+    <div class="hero-splash hero-splash-right"></div>
+
+    <div class="container hero-content reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Resgate GV</p>
+        <h1 id="hero-title">Resgate <span>GV</span></h1>
+        <p class="hero-subtitle">Uma juventude vivendo<br>o propósito de <strong>Cristo.</strong></p>
+
+        <ul class="event-info">
+          <li><span class="info-icon">▣</span><span>Encontros todos os sábados</span></li>
+          <li><span class="info-icon">◷</span><span>18h30</span></li>
+          <li><span class="info-icon">⌖</span><span>Comunidade Santa Luzia</span></li>
         </ul>
-   </section>
-   <section class="quemsomos">
-    <p class="quemsomos-text uppercase text-vermelho">Quem somos</p>
-    <h2 class="uppercase">Somos o <span class="text-amarelo">resgate gv</span></h2>
-    <p>Somos uma comunidade de jovens que busca viver uma fé prática, construir relacionamentos e caminhar juntos em Cristo.</p>
-    <div class="cards-quemsomos">
-      <div class="card">
-        <img src="assets/imgs/icone-proposito.png" alt="Icone Proposito">
-        <h3 class="uppercase">Propósito</h3>
-        <p>Viver e compartilhar o Evangelho.</p>
+
+        <a class="btn btn-red" href="#encontros">Quero participar <span>→</span></a>
       </div>
-      <div class="card">
-        <img src="assets/imgs/icone-comunidade.png" alt="Icone Comunidade">
-        <h3 class="uppercase">Comunidade</h3>
-        <p>Crescer juntos através de relacionamentos.</p>
-      </div>
-      <div class="card">
-        <img src="assets/imgs/icone-resgate.png" alt="Icone Resgate">
-        <h3 class="uppercase">Resgate</h3>
-        <p>Uma juventude chamada para uma nova vida.</p>
-      </div>
-    </div>
-   </section>
-   <section class="proximoencontro">
-    <div class="encontro">
-        <div class="encontro-text">
-        <p class="uppercase text-vermelho">Próximo Encontro</p>
-        <p class="uppercase">Sábado</p>
-        <p class="uppercase text-amarelo">18:30</p>
-        <ul>
-          <li>
-            <img src="assets/imgs/icone-maps-proximoencontro.png" alt="Logo Local">
-            <p class="uppercase">Comunidade Santa Luzia</p>
-          </li>
-        </ul>
-        <p class="uppercase">Você é nosso convidado</p>
-      </div>
-      <button class="uppercase">
-        Participar do resgate --->
-      </button>
-    </div>
-    <img src="assets/imgs/LogoResgate.png" alt="Logo ResgateGV">
-  </section>
-  <section class="galeria" id="galeria">
-    <p class="uppercase text-vermelho">Galeria</p>
-    <h4 class="uppercase">Momentos do <span class="text-amarelo">Resgate GV</span></h4>
-    <div class="galeria-imagens">
-      <img src="assets/imgs/galeria/1 (1).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (2).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (3).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (4).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (5).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (6).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (7).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (8).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (9).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (10).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (11).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (12).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (13).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (14).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (15).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (16).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (17).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (18).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (19).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (20).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (21).jpg" alt="">
-      <img src="assets/imgs/galeria/1 (22).jpg" alt="">
     </div>
   </section>
-  <section class="facaparte">
-      <div class="imgtexto">
-        <img src="assets/imgs/" alt="">
-        <p class="uppercase">Faça parte</p>
+
+  <section class="about section-dark" id="sobre">
+    <div class="container about-content reveal">
+      <p class="section-label red">Quem somos</p>
+      <h2>Somos o <span>Resgate GV</span></h2>
+      <p class="section-intro">
+        Somos uma comunidade de jovens que busca viver uma fé prática,
+        construir relacionamentos e caminhar juntos em Cristo.
+      </p>
+
+      <div class="about-cards">
+        <article class="about-card">
+          <img src="assets/imgs/icone-proposito.png" alt="" aria-hidden="true">
+          <div>
+            <h3>Propósito</h3>
+            <p>Viver e compartilhar o Evangelho.</p>
+          </div>
+        </article>
+
+        <article class="about-card">
+          <img src="assets/imgs/icone-comunidade.png" alt="" aria-hidden="true">
+          <div>
+            <h3>Comunidade</h3>
+            <p>Crescer juntos através de relacionamentos.</p>
+          </div>
+        </article>
+
+        <article class="about-card">
+          <img src="assets/imgs/icone-resgate.png" alt="" aria-hidden="true">
+          <div>
+            <h3>Resgate</h3>
+            <p>Uma juventude chamada para uma nova vida.</p>
+          </div>
+        </article>
       </div>
-      <div class="text">
-        <p>Quer conhecer o Resgate GV?</p>
+    </div>
+  </section>
+
+  <section class="next-event section-dark" id="encontros">
+    <div class="next-event-bg"></div>
+    <div class="container next-event-inner reveal">
+      <div class="next-event-copy">
+        <p class="section-label red">Próximo encontro</p>
+        <h2>Sábado</h2>
+        <strong class="event-time">18:30</strong>
+        <p class="location"><span>⌖</span> Comunidade Santa Luzia</p>
+        <p class="invite">Você é nosso convidado.</p>
+        <a class="btn btn-red" href="https://docs.google.com/forms/d/e/1FAIpQLSfDe2x2pQNWtkqIPdbqj8do6vz-_GHcP4r5t6SCD7UJRcsVtg/viewform" target="_blank" rel="noopener noreferrer">Participar do Resgate <span>→</span></a>
+      </div>
+
+      <img class="next-event-logo" src="assets/imgs/LogoResgate.png" alt="Logo Resgate GV">
+    </div>
+  </section>
+
+  <section class="gallery section-dark" id="galeria">
+    <div class="container reveal">
+      <p class="section-label red">Galeria</p>
+      <h2>Momentos do <span>Resgate</span></h2>
+
+      <div class="gallery-grid">
+        <a href="assets/imgs/galeria/1 (1).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (1).jpg" alt="Momento do Resgate GV"></a>
+        <a href="assets/imgs/galeria/1 (2).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (2).jpg" alt="Momento do Resgate GV"></a>
+        <a href="assets/imgs/galeria/1 (3).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (3).jpg" alt="Momento do Resgate GV"></a>
+        <a href="assets/imgs/galeria/1 (4).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (4).jpg" alt="Momento do Resgate GV"></a>
+        <a href="assets/imgs/galeria/1 (5).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (5).jpg" alt="Momento do Resgate GV"></a>
+        <a href="assets/imgs/galeria/1 (6).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (6).jpg" alt="Momento do Resgate GV"></a>
+        <a href="assets/imgs/galeria/1 (7).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (7).jpg" alt="Momento do Resgate GV"></a>
+        <a href="assets/imgs/galeria/1 (8).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (8).jpg" alt="Momento do Resgate GV"></a>
+        <a href="assets/imgs/galeria/1 (9).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (9).jpg" alt="Momento do Resgate GV"></a>
+        <a href="assets/imgs/galeria/1 (10).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (10).jpg" alt="Momento do Resgate GV"></a>
+        <a href="assets/imgs/galeria/1 (11).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (11).jpg" alt="Momento do Resgate GV"></a>
+        <a href="assets/imgs/galeria/1 (12).jpg" class="gallery-item"><img src="assets/imgs/galeria/1 (12).jpg" alt="Momento do Resgate GV"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="join section-dark">
+    <div class="container join-box reveal">
+      <div class="join-icon">♙</div>
+      <div class="join-title">Faça <span>parte</span></div>
+      <div class="join-copy">
+        <strong>Quer conhecer o Resgate GV?</strong>
         <p>Não importa se você já participa de uma comunidade ou está chegando pela primeira vez.</p>
       </div>
-      <button class="uppercase">
-        Quero Participar --->
-      </button>
+      <a class="btn btn-yellow" href="https://docs.google.com/forms/d/e/1FAIpQLSfDe2x2pQNWtkqIPdbqj8do6vz-_GHcP4r5t6SCD7UJRcsVtg/viewform" target="_blank" rel="noopener noreferrer">Quero participar <span>→</span></a>
+    </div>
   </section>
-  </main>
 
-  <footer>
-    <div class="footer-primario">
-      <div class="logo-footer">
-        <img src="assets/imgs/LogoResgate.png" alt="Logo ResgateGV" id="logo">
-        <p class="logo-text-footer uppercase">Resgate <span class="text-vermelho">GV</span></p>
+</main>
+
+<footer class="site-footer" id="contato">
+  <div class="container footer-primary">
+    <div class="footer-brand">
+      <a class="brand" href="#inicio">
+        <img src="assets/imgs/LogoResgate.png" alt="Logo Resgate GV">
+        <span class="brand-name">Resgate <strong>GV</strong></span>
+      </a>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navegação do rodapé">
+      <h3>Navegação</h3>
+      <div>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#encontros">Encontros</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDe2x2pQNWtkqIPdbqj8do6vz-_GHcP4r5t6SCD7UJRcsVtg/viewform" target="_blank" rel="noopener noreferrer">Inscrição</a>
       </div>
-      <nav class="menu-secundario">
-        <ul class="menu-secundario-lista1">
-          <li><a href="#" class="uppercase">Início</a></li>
-          <li><a href="#" class="uppercase">Sobre</a></li>
-          <li><a href="#" class="uppercase">Encontros</a></li>
-        </ul>
-        <ul class="menu-secundario-lista2">
-          <li><a href="#" class="uppercase">Galeria</a></li>
-          <li><a href="#" class="uppercase">Contato</a></li>
-          <li><a href="#" class="uppercase">Inscrição</a></li>
-        </ul>
-      </nav>
-      <div class="contato-footer" id="contato">
-        <ul class="participacao-lista-primaria">
-          <li>
-            <img src="assets/imgs/" alt="">
-            <p class="uppercase"><a href="https://www.instagram.com/resgategv/" target="_blank" rel="noopener noreferrer">@resgategv</a></p>
-          </li>
-          <li>
-            <img src="assets/imgs/" alt="">
-            <p class="uppercase">(33) 99905-4065</p>
-          </li>
-          <li>
-            <img src="assets/imgs/" alt="">
-            <p class="uppercase">Comunidade Santa Luzia Governador Valadares - MG</p>
-          </li>
-          </ul>
-      </div>
-      <div class="siganos">
-        <a href="https://www.instagram.com/resgategv/" target="_blank" rel="noopener noreferrer"><img src="assets/imgs/" alt="Link do nosso instagram"></a>
-        <a href="wa.me/5533999054065" target="_blank" rel="noopener noreferrer"><img src="assets/imgs/" alt="Link do nosso whatsapp"></a>
+    </nav>
+
+    <div class="footer-contact">
+      <h3>Contato</h3>
+      <p><span>◎</span><a href="https://www.instagram.com/resgategv/" target="_blank" rel="noopener noreferrer">@resgategv</a></p>
+      <p><span>◉</span><a href="https://wa.me/5533999054065" target="_blank" rel="noopener noreferrer">(33) 99905-4065</a></p>
+      <p><span>⌖</span> Comunidade Santa Luzia<br>Governador Valadares - MG</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Siga-nos</h3>
+      <div>
+        <a href="https://www.instagram.com/resgategv/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
+        <a href="https://wa.me/5533999054065" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">◉</a>
       </div>
     </div>
-    <div class="footer-secundario">
-      <p class="uppercase">A cruz de cristo é o nosso Resgate</p>
-      <p>&copy; 2026 Resgate GV. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+  </div>
 
-  <script src="main.js" defer></script>
+  <div class="footer-secondary">
+    <p>A cruz de <span>Cristo</span> é nossa!</p>
+    <small>© 2026 ResgateGV · Todos os direitos reservados.</small>
+  </div>
+</footer>
 
+<script src="main.js" defer></script>
 </body>
 </html>

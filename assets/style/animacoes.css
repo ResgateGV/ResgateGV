@@ -1,0 +1,26 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn,
+.about-card,
+.footer-social a {
+  transition: transform .25s ease, filter .25s ease, background .25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,196,0,.35);
+}
