@@ -24,12 +24,8 @@ main{
 
 /* Quem Somos */
 
-.quemsomo{
-    background-color: var(--cor-fundo-pretoprofundo);
-}
 
 .quemsomos .cards-quemsomos{
-    background-color: var(--cor-fundo-cinzaescuro);
     display: flex;
     justify-content: center;
     padding: 100px 2%;
@@ -45,6 +41,11 @@ main{
         #FF8C00,
         #FFC400
     ) 2;
+}
+
+.quemsomos .cards-quemsomos .card img{
+    width: 80px;
+    height: 80px;
 }
 
 /* Proximo Encontro */
@@ -72,6 +73,11 @@ main{
 .galeria h4 {
     font-size: clamp(2rem, 5vw, 4rem);
     margin: 15px 0 50px;
+}
+
+.encontro-text ul li img{
+    width: 20px;
+    height: 20px;
 }
 
 .galeria-imagens {
