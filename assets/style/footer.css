@@ -48,9 +48,6 @@
   width: 43px;
   height: 43px;
   place-items: center;
-  border: 2px solid var(--amarelo);
-  border-radius: 20%;
-  color: var(--amarelo);
   font-size: 1.35rem;
 }
 
